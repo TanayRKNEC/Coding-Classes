@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+    int i=0,n,ans,num;
+    printf("Enter Number: ");
+    scanf("%d",&n);
+    while (round(pow(2,i))<=n){
+        i++;
+    }
+    num=n-round(pow(2,i-1));
+    ans=2*num+1;
+    printf("%d",ans);
+    return 0;
+}
